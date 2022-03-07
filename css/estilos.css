@@ -1,0 +1,12 @@
+.caja {
+    
+    margin:0 auto;
+    width: 60%;
+}
+
+.caja .mifoto{
+
+    border-radius:3em;
+    box-shadow:0 0 0 9.em rgba(0,0,0,0.0);
+    cursor: move;
+}

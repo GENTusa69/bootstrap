@@ -1,6 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <!-- menú -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">INESILLA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="offcanvas" href="#Tina">visitanos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- fin menu -->
+
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/estilos.css"
     >
@@ -13,15 +53,104 @@
     <div class="container"> 
         <h1>La Martína Rístorante</h1> 
         <hr>
-        <div class="display-1">Restaurante Pasión</div>
+        <div class="display-1" data-bs-toggle="modal" data-bs-target="#wiiii">Restaurante Pasión</div>
         <p class="lead">
             <lore>La Martína, donde la experiencia culinaria, la pasión, el amor, la felicidad y todas esas hermosas experiencias se unen para el disfrute de los comensales en explosiones casi orgasmicas con sabores que enamoran.</lore>
         </p>
         <div class="caja">
-            <img srs="imagenes/tina.JPG alt="tina.jpg">
+            <img data-bs-toggle="offcanvas" data-bs-target="#Tina" class="img-fluid mifoto" src="imagenes/tina.JPG" alt="tina">
         </div>
-    </div>
-    
+        
+        <br>
+
+        <table class="table table-striped tablehover">
+            <tr>
+                <td>Carne</td>
+                <td>Exquisito2</td>
+                <td>Exquisito3</td>
+                <td>Exquisito4</td>
+                <td>Exquisito5</td>
+            </tr>
+            <tr>
+                <td>Exquisito1</td>
+                <td>Exquisito2</td>
+                <td>Exquisito3</td>
+                <td>Pastas</td>
+                <td>Exquisito5</td>
+            </tr>
+            <tr> 
+                <td>Exquisito1</td>
+                <td>Exquisito2</td>
+                <td>Exquisito3</td>
+                <td>Vinos</td>
+                <td>Exquisito5</td>
+            </tr>
+            <tr>
+                <td>Exquisito1</td>
+                <td>Exquisito2</td>
+                <td>Exquisito3</td>
+                <td>Exquisito4</td>
+                <td>Exquisito5</td>
+            </tr>
+            <tr>
+                <td>Exquisito1</td>
+                <td>Exquisito2</td>
+                <td>Exquisito3</td>
+                <td>Exquisito4</td>
+                <td>Exquisito5</td>
+            </tr>
+        </table> 
+    <!-- menú der -->
+    <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#Tina" role="button" aria-controls="offcanvasExample"> -->
+        Link with href
+      </a>
+      <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"> -->
+        <!-- Button with data-bs-target -->
+      </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="Tina" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- menú der fin -->
+
+    <!-- Menú Modal -->
+    <div class="modal fade" id="wiiii" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Martina La mejor comenzal</p>
+            <img src="imagenes/baño.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Fin Menú Modal -->
 
     <script src="js/bootstrap.min.js"></script>
 </body>
