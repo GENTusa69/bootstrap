@@ -10,3 +10,11 @@
     box-shadow:0 0 0 9.em rgba(0,0,0,0.0);
     cursor: move;
 }
+
+.navar-dark, .bg-dark {
+    background: rgb(85, 85, 235)!important;
+}}
+.row div[class^=col]{
+    background: rgb(24, 131, 231);
+    border:solid 0.1em
+}
