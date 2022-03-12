@@ -13,7 +13,7 @@
 
 .navar-dark, .bg-dark {
     background: rgb(85, 85, 235)!important;
-}}
+}
 .row div[class^=col]{
     background: rgb(24, 131, 231);
     border:solid 0.1em
